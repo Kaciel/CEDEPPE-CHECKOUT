@@ -16,38 +16,38 @@
 </head>
 <body>
    <header class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div style="align-items: center;text-align: justify; padding-left: 20px; padding-top: 20px; ">
-          <img src="C:\Users\Notebook\Documents\ProjetosGitHub\UDEMY\CEDEPPE\img\logo3.7d58f9a7.png" alt="Logo Cedeppe">
-
-          <span><h4 >CEDEPPE</h4></span>
-        </div>
-        </div>
-      </div>
+     
    </header>
-    <div class="container mt-5 jumbotron">
+    <div class="container mt-5 jumbotron" >
       <div class="row">
         <div class="col-md-8">
           <h4>Dados de pagamento</h4>
             
             <form>
-              <div class="form-group">
+              <div class="row">
+
+              
+              <div class="form-group col-md-6">
                <label for="">Nome</label>
                <input type="text" class="form-control">
               </div>
 
-              <div class="form-group">
+              <div class="form-group col-md-6">
                 <label for="">Sobrenome</label>
                 <input type="text" class="form-control">
               </div>
 
-              <div class="form-group">
+              <div class="form-group col-md-8">
                 <label for="">Endereço</label>
                 <input type="text" class="form-control">
               </div>
 
-              <div class="form-group">
+              <div class="form-group col-md-4">
+                <label for="">CEP</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="form-group col-md-4">
                 <label for="">Estado</label>
                 <select class="form-control" name="" id="">
                   <option value="">Acre</option>
@@ -80,7 +80,7 @@
                 </select>
               </div>
 
-              <div class="form-group">
+              <div class="form-group col-md-4">
                 <label for="">País</label>
                 <select class="form-control" name="" id="">
                   <option value="">Escolha</option>
@@ -115,42 +115,57 @@
                                     
                 </select>
                  
-                <div class="form-group">
-                  <label for="">Email</label>
-                  <input type="text" class="form-control">
-                </div>
-
-                <div class="form-group">
-                  <label for="">Celular</label>
-                  <input type="text" class="form-control">
-                </div>
-
-
-  
+                          
+              </div>
+              
+              <div class="form-group col-md-6">
+                <label for="">Celular</label>
+                <input type="text" class="form-control">
               </div>
 
 
+              <div class="form-group col-md-6">
+                <label for="">Email</label>
+                <input type="text" class="form-control">
+              </div>
+
+
+            </div>
             </form>
 
         </div>
 
-
+        
+         
+         
         <div class="col-md-4" style="align-items: end;">
+
+          <div class="col-md-4">
+            
+            <img class="d-flex"   src="C:\Users\Notebook\Documents\ProjetosGitHub\UDEMY\CEDEPPE\img\logo3.7d58f9a7.png" alt="Logo Cedeppe">
+  
+            <span><h4 >CEDEPPE</h4></span>
+          </div>
+
           <h4 class="d-flex justify-content-between">Carrinho </h4>
+
+          
 
           <ul class="list-group ab-3">
 
             <li class="list-group-item d-flex justify-content-between">
               <div>
                 <h6>Valor da Associação</h6>
-                <strong><h5>R$ 410,00</h5></strong> 
+                <span>R$ 410,00</span>
+                
               </div>
 
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <div>
                 <label for="">Desconto</label>
-               <strong><h5>R$ 0,00</h5></strong> 
+                <span>R$ 0,00</span>
+               
               </div>
             </li>
           </ul>
@@ -160,7 +175,7 @@
             <li class="list-group-item d-flex justify-content-between">
               <div>
                 <label for="">Total</label>
-               <strong><h3>R$ 410,00</h3></strong> 
+                <strong><h5>R$ 410,00</h5></strong> 
               </div>
             </li>
 
@@ -169,7 +184,8 @@
             <li class="list-group-item d-flex justify-content-between">
               <div class="bg-dark">
 
-               <button class="btn btn-success" type="button">Pagar Agora</button>
+              
+               <a class="btn btn-success" href="#" role="button">Pagar agora</a>
               </div>
             </li>
           </ul>
